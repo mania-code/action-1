@@ -7,6 +7,9 @@ jobs:
     steps:
       - name: Wellcome Message
         run: echo "Welcome to my first workflow!"
+
+      - name: checkout repository
+        uses: actions/checkout@v2
       
       - name: list file
         run: ls -a 
