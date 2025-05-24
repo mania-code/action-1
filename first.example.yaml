@@ -1,0 +1,15 @@
+name: My First Workflow
+on: [ push, pull_request ]
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wellcome Message
+        run: echo "Welcome to my first workflow!"
+      
+      - name: list file
+        run: ls -a 
+
+      - name: read readme
+        run: cat README.md
